@@ -1,15 +1,10 @@
-# Ansible Linux Configuration
-
-## Project URL
-http://34.236.74.89/
-
-## GitHub Repository
+# Github Repository
 https://github.com/PhelelaniS1/ansible-linux-configuration
 
-## Project Overview
+# Project Overview
 This project automates Linux server configuration on AWS EC2 using Ansible.
 
-## Requirements Completed
+# Requirements Completed
 - Ansible Playbook: setup.yml
 - Roles: base, nginx, app, ssh
 - Live demo: http://34.236.74.89/
