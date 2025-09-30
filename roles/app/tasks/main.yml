@@ -1,0 +1,52 @@
+---
+- name: Create sample static website
+  copy:
+    content: |
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>My DevOps Project</title>
+          <style>
+              body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+              .container { max-width: 800px; margin: 0 auto; }
+              .header { background: #f4f4f4; padding: 20px; border-radius: 5px; }
+              .skills { background: #e7f3ff; padding: 15px; border-radius: 5px; margin: 20px 0; }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <div class="header">
+                  <h1>Successfully Deployed with Ansible!</h1>
+                  <p>This server was automatically configured using Ansible playbooks</p>
+              </div>
+              
+              <div class="skills">
+                  <h2>Skills Demonstrated</h2>
+                  <ul>
+                      <li>Infrastructure as Code (IaC)</li>
+                      <li>Configuration Management with Ansible</li>
+                      <li>AWS EC2 Instance Management</li>
+                      <li>Nginx Web Server Configuration</li>
+                      <li>Linux Server Administration</li>
+                      <li>Automated Deployment</li>
+                  </ul>
+              </div>
+              
+              <h3>Project Details</h3>
+              <p>This project showcases automated server provisioning and configuration management using Ansible. The entire infrastructure is defined as code, ensuring consistency and repeatability across deployments.</p>
+              
+              <h3>Technologies Used</h3>
+              <ul>
+                  <li>Ansible</li>
+                  <li>AWS EC2</li>
+                  <li>Ubuntu Linux</li>
+                  <li>Nginx</li>
+                  <li>Git</li>
+              </ul>
+          </div>
+      </body>
+      </html>
+    dest: /var/www/html/devops-project.html
+    owner: www-data
+    group: www-data
+    mode: '0644'

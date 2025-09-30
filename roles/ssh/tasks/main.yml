@@ -1,0 +1,16 @@
+---
+- name: Ensure .ssh directory exists
+  file:
+    path: /home/ubuntu/.ssh
+    state: directory
+    mode: '0700'
+    owner: ubuntu
+    group: ubuntu
+
+- name: Add placeholder for SSH key
+  copy:
+    content: "# SSH key would be added here in production"
+    dest: /home/ubuntu/.ssh/authorized_keys
+    owner: ubuntu
+    group: ubuntu
+    mode: '0600'
