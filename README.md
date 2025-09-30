@@ -10,6 +10,7 @@ A complete Infrastructure as Code (IaC) project that automates the provisioning 
 
 - **Main Website**: http://34.236.74.89/
 - **Project Page**: http://34.236.74.89/devops-project.html
+- **URL**: https://github.com/PhelelaniS1/ansible-linux-configuration
 
 ## Project Overview
 
